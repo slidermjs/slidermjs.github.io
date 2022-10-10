@@ -1,0 +1,31 @@
+/* stylelint-disable block-no-empty */
+
+// > 1080px
+@include media-breakpoint-up(desktop) {}
+
+// < 1080px
+@include media-breakpoint-down(tablet) {}
+
+// 850px - 1079.98px
+@include media-breakpoint-between(tablet, tablet) {}
+
+// > 850px
+@include media-breakpoint-up(tablet) {}
+
+// < 850px
+@include media-breakpoint-down(mobile-large) {}
+
+// 550px - 849.98px
+@include media-breakpoint-between(mobile-large, mobile-large) {}
+
+// > 550px
+@include media-breakpoint-up(mobile-large) {}
+
+// < 550px
+@include media-breakpoint-down(mobile) {}
+
+// 320px - 549.98px
+@include media-breakpoint-between(mobile, mobile) {}
+
+// < 320px
+@include media-breakpoint-down(xs) {}

@@ -1,0 +1,18 @@
+body {
+  color: $base-font-color;
+  font-size: $base-font-size;
+  font-family: $font-family-base-en;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+
+  &--wide {
+    max-width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
