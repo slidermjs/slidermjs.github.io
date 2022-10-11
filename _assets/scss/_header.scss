@@ -12,25 +12,35 @@
   align-items: center;
   list-style: none;
 
-  a {
-    display: inline-block;
-    box-sizing: border-box;
-    height: $header-height;
-    padding: 0 35px;
-    color: aquamarine;
-    line-height: $header-height;
-    transition: all 300ms linear;
-
-    &:hover {
-      background-color: aquamarine;
-      color: #000;
-    }
-  }
-
   &__item {
+    a {
+      display: inline-block;
+      box-sizing: border-box;
+      height: $header-height;
+      padding: 0 35px;
+      color: aquamarine;
+      line-height: $header-height;
+      transition: all 300ms linear;
+
+      &:hover {
+        background-color: aquamarine;
+        color: #000;
+      }
+    }
+
     &--logo {
+      position: absolute;
+      left: 0;
+
       a {
-        border-bottom: 5px aquamarine solid;
+        &:hover {
+          background-color: initial;
+        }
+      }
+
+      img {
+        vertical-align: middle;
+        height: 45px;
       }
     }
   }

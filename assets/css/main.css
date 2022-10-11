@@ -138,6 +138,330 @@ table {
 }
 
 body {
+  background-color: white;
+  color: #333;
+  font-size: 14px;
+  font-family: Helvetica, arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  cursor: text;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  color: black;
+  font-size: 28px;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  color: black;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+.highlight {
+  color: #000;
+  /* Comment */
+  /* Error */
+  /* Keyword */
+  /* Operator */
+  /* Comment.Multiline */
+  /* Comment.Preproc */
+  /* Comment.Single */
+  /* Comment.Special */
+  /* Generic.Deleted */
+  /* Generic.Emph */
+  /* Generic.Error */
+  /* Generic.Heading */
+  /* Generic.Inserted */
+  /* Generic.Output */
+  /* Generic.Prompt */
+  /* Generic.Strong */
+  /* Generic.Subheading */
+  /* Generic.Traceback */
+  /* Keyword.Constant */
+  /* Keyword.Declaration */
+  /* Keyword.Namespace */
+  /* Keyword.Pseudo */
+  /* Keyword.Reserved */
+  /* Keyword.Type */
+  /* Literal.Number */
+  /* Literal.String */
+  /* Name.Attribute */
+  /* Name.Builtin */
+  /* Name.Class */
+  /* Name.Constant */
+  /* Name.Decorator */
+  /* Name.Entity */
+  /* Name.Exception */
+  /* Name.Function */
+  /* Name.Label */
+  /* Name.Namespace */
+  /* Name.Tag */
+  /* Name.Variable */
+  /* Operator.Word */
+  /* Text.Whitespace */
+  /* Literal.Number.Float */
+  /* Literal.Number.Hex */
+  /* Literal.Number.Integer */
+  /* Literal.Number.Oct */
+  /* Literal.String.Backtick */
+  /* Literal.String.Char */
+  /* Literal.String.Doc */
+  /* Literal.String.Double */
+  /* Literal.String.Escape */
+  /* Literal.String.Heredoc */
+  /* Literal.String.Interpol */
+  /* Literal.String.Other */
+  /* Literal.String.Regex */
+  /* Literal.String.Single */
+  /* Literal.String.Symbol */
+  /* Name.Builtin.Pseudo */
+  /* Name.Variable.Class */
+  /* Name.Variable.Global */
+  /* Name.Variable.Instance */
+  /* Literal.Number.Integer.Long */
+}
+.highlight .hll {
+  background-color: #ffc;
+}
+.highlight .c {
+  color: #998;
+  font-style: italic;
+}
+.highlight .err {
+  background-color: #e3d2d2;
+  color: #a61717;
+}
+.highlight .k {
+  color: rgb(114, 106, 0);
+}
+.highlight .o {
+  color: #000;
+  font-weight: bold;
+}
+.highlight .cm {
+  color: #998;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .c1 {
+  color: #998;
+  font-style: italic;
+}
+.highlight .cs {
+  color: #999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .gd {
+  background-color: #fdd;
+  color: #000;
+}
+.highlight .ge {
+  color: #000;
+  font-style: italic;
+}
+.highlight .gr {
+  color: #a00;
+}
+.highlight .gh {
+  color: #999;
+}
+.highlight .gi {
+  background-color: #dfd;
+  color: #000;
+}
+.highlight .go {
+  color: #888;
+}
+.highlight .gp {
+  color: #555;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #aaa;
+}
+.highlight .gt {
+  color: #a00;
+}
+.highlight .kc {
+  color: rgb(8, 174, 216);
+}
+.highlight .kd {
+  color: rgb(133, 0, 110);
+}
+.highlight .kn {
+  color: #000;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #000;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #000;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #458;
+  font-weight: bold;
+}
+.highlight .m {
+  color: #099;
+}
+.highlight .s {
+  color: #d01040;
+}
+.highlight .na {
+  color: #008080;
+}
+.highlight .nb {
+  color: #0086b3;
+}
+.highlight .nc {
+  color: #458;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #008080;
+}
+.highlight .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+.highlight .ni {
+  color: #800080;
+}
+.highlight .ne {
+  color: #900;
+  font-weight: bold;
+}
+.highlight .nf {
+  color: #900;
+  font-weight: bold;
+}
+.highlight .nl {
+  color: #900;
+  font-weight: bold;
+}
+.highlight .nn {
+  color: #555;
+}
+.highlight .nt {
+  color: #000080;
+}
+.highlight .nv {
+  color: #008080;
+}
+.highlight .ow {
+  color: #000;
+  font-weight: bold;
+}
+.highlight .w {
+  color: #bbb;
+}
+.highlight .mf {
+  color: #099;
+}
+.highlight .mh {
+  color: #099;
+}
+.highlight .mi {
+  color: #099;
+}
+.highlight .mo {
+  color: #099;
+}
+.highlight .sb {
+  color: #d01040;
+}
+.highlight .sc {
+  color: #d01040;
+}
+.highlight .sd {
+  color: #d01040;
+}
+.highlight .s2 {
+  color: #d01040;
+}
+.highlight .se {
+  color: #d01040;
+}
+.highlight .sh {
+  color: #d01040;
+}
+.highlight .si {
+  color: #d01040;
+}
+.highlight .sx {
+  color: #d01040;
+}
+.highlight .sr {
+  color: #009926;
+}
+.highlight .s1 {
+  color: #5a5a5a;
+}
+.highlight .ss {
+  color: #990073;
+}
+.highlight .bp {
+  color: #999;
+}
+.highlight .vc {
+  color: #008080;
+}
+.highlight .vg {
+  color: #008080;
+}
+.highlight .vi {
+  color: #008080;
+}
+.highlight .il {
+  color: #099;
+}
+
+body {
   color: #222;
   font-size: 16px;
   font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
@@ -151,8 +475,31 @@ body {
   max-width: 100%;
 }
 
-a {
-  text-decoration: none;
+.content__container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.content__container--has-sidebar {
+  display: flex;
+}
+.content__container--has-sidebar .content__body {
+  flex: 1 1;
+  padding: 20px;
+}
+.content__container--has-sidebar .content__sidebar {
+  flex: 0 0 200px;
+  padding: 20px;
+}
+
+div.highlight {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .navigation-header {
@@ -169,7 +516,7 @@ a {
   align-items: center;
   list-style: none;
 }
-.primary-menu a {
+.primary-menu__item a {
   display: inline-block;
   box-sizing: border-box;
   height: 80px;
@@ -178,10 +525,108 @@ a {
   line-height: 80px;
   transition: all 300ms linear;
 }
-.primary-menu a:hover {
+.primary-menu__item a:hover {
   background-color: aquamarine;
   color: #000;
 }
-.primary-menu__item--logo a {
-  border-bottom: 5px aquamarine solid;
+.primary-menu__item--logo {
+  position: absolute;
+  left: 0;
+}
+.primary-menu__item--logo a:hover {
+  background-color: initial;
+}
+.primary-menu__item--logo img {
+  vertical-align: middle;
+  height: 45px;
+}
+
+body.home {
+  background-color: #000;
+}
+
+.home__first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.home__background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.first-section__intro {
+  max-width: 480px;
+}
+.first-section__intro h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+}
+.first-section__intro h1 span {
+  position: relative;
+  display: inline-block;
+  border: 1px aquamarine solid;
+  background-color: aquamarine;
+  color: #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.first-section__intro h1 span::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -245px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid aquamarine;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+.first-section__intro h1 span::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: -30px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid aquamarine;
+}
+.first-section__intro p {
+  padding: 20px 0;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.intro__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.intro__button {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  margin: 0 10px;
+  padding: 10px 0;
+  border: 1px #fff solid;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
 }
