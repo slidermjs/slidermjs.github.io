@@ -1,0 +1,21 @@
+.demo {
+  &__box {
+    position: relative;
+    box-sizing: border-box;
+    height: 300px;
+    border: 1px #000 solid;
+    background-color: #fff;
+    line-height: 300px;
+    text-align: center;
+
+    span {
+      position: absolute;
+      vertical-align: middle;
+      overflow: hidden;
+      color: #111;
+      font-weight: bold;
+      font-size: 100px;
+      left: 70px;
+    }
+  }
+}
