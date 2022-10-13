@@ -45,3 +45,9 @@ div.highlight {
 
   @include border-radius(4px);
 }
+
+.content__body {
+  p {
+    margin-bottom: 15px;
+  }
+}

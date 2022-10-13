@@ -7,6 +7,7 @@ const sassParser = require('sass');
 
 const distDir = '../../assets';
 const main = ['./js/index.js', './scss/index.scss'];
+const demo = ['./js/demo.js'];
 
 module.exports = (env, argv) => ({
   optimization: {
@@ -23,6 +24,7 @@ module.exports = (env, argv) => ({
   },
   entry: {
     main,
+    demo,
   },
   output: {
     filename: `${distDir}/js/[name].js`,

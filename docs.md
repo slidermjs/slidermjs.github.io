@@ -4,36 +4,46 @@ title: Sliderm Docs
 id: docs
 permalink: /docs/
 ---
-Sliderm is a slider and carousel JavaScript library that has only packed size less than 12 KB.
 
+Thanks for being interested in using Sliderm. If you are looking for a simple slider library, you got a right place. Its packed size is less than 12 KB, extremely lightweight and flexible, easy to extend it for your needs.
 
 ## Getting started
 
-Install
+### Install
 
 ```
 npm install sliderm
 ```
 
-CSS
+Once you have installed Slidem via NPM, you can import the JavaScript and CSS code.
+
+```javascript
+import Sliderm from 'sliderm';
+import css from 'sliderm/src/assets/scss/index.scss';
+```
+
+Or, just put the JavaScript and CSS into your HTML.
 
 ```html
 <link rel="stylesheet" href="node_modules/sliderm/dist/css/sliderm.css">
-```
-
-JS
-```html
 <script src="node_modules/sliderm/dist/js/sliderm.js"></script>
 ```
 
-## Examples
-
-The HTML makup is required for intializing sliderm.
-
-#### HTML
+### CDN
 
 ```html
-<div class="sliderm your-class-name">
+<link rel="stylesheet" href="https://sliderm.com/dist/1.0.3/sliderm.css">
+<script src="https://sliderm.com/dist/1.0.3/sliderm.js"></script>
+```
+
+This documentation webiste is hosted on GitHub Page, the library is available to use directly as well.
+
+### HTML markup
+
+The HTML makup is required for intializing Sliderm.
+
+```html
+<div id="exampe-slider" class="sliderm">
     <div class="sliderm__slider">
         <div class="sliderm__slides">
             <div class="sliderm__slide"><img src="./demo/1.jpg" /></div>
@@ -46,22 +56,28 @@ The HTML makup is required for intializing sliderm.
 </div>
 ```
 
-#### JavaScript
+### How to use
+
+Initializing the Sliderm is quite simple, the first parameter is the CSS selctor of the slider you want to activate, the second parameter is the configuration options.
 
 ```javascript
- const sliderm = new Sliderm('.your-class-name', {
+ const sliderm = new Sliderm('#exampe-slider', {
     previousNext: true,
     pagination: true,
     grouping: false,
     loop: true,
     preview: false,
-    edge: 40,
+    previewEdge: 40,
     columns: 4,
     duration: 1000,
     spacing: 10,
     align: 'center',
 });
+```
 
+There are two events for now.
+
+```javascript
 sliderm.on('slide.start', () => {
   console.log('Just starting to slide!');
 });
@@ -71,9 +87,4 @@ sliderm.on('slide.end', () => {
 });
 ```
 
-The detailed demonstrations will be put on the official documentation website: [sliderm.com](sliderm.com).
-
-## License
-
-Author: [Terry L.](https://terryl.in/)
-Sliderm's license in under ***MIT***, you can do anything you want on using this JavaScript library.
+That's it.

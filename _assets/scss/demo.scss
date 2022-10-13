@@ -9,13 +9,86 @@
     text-align: center;
 
     span {
-      position: absolute;
       vertical-align: middle;
       overflow: hidden;
       color: #111;
       font-weight: bold;
       font-size: 100px;
-      left: 70px;
+    }
+  }
+
+  &__options {
+    display: flex;
+    max-width: 800px;
+    margin: 10px auto;
+  }
+
+  .option {
+    &__item {
+      flex: 0 0 25%;
+      margin: 5px;
+      border-bottom: 1px #ccc solid;
+    }
+
+    &__value {
+      display: inline-block;
+      min-width: 40px;
+      padding: 0 5px;
+      border: 1px #ddd solid;
+      text-align: center;
+
+      @include border-radius(4px);
+    }
+
+    &__type {
+      color: rgb(47 160 160);
+      font-size: 12px;
+    }
+  }
+
+  .item {
+    &__ctrl {
+      width: 100px;
+      height: 40px;
+      padding: 20px 20px 10px;
+
+      select {
+        height: 30px;
+        padding: 0 10px;
+        border: 1px solid #ddd;
+        line-height: 30px;
+
+        @include border-radius(4px);
+      }
+
+      &--toggle {
+        width: 50px;
+
+        .on {
+          .noUi-handle {
+            border-color: #3fb8af;
+            background-color: #3fb8af !important;
+
+            &::before,
+            &::after {
+              background: #90e6e0;
+            }
+          }
+        }
+
+        .noUi-handle {
+          top: -9px;
+          right: -17px;
+          height: 34px;
+
+          &::before,
+          &::after {
+            top: 9px;
+          }
+
+          @include border-radius(50%);
+        }
+      }
     }
   }
 }
