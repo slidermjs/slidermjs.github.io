@@ -51,6 +51,6 @@
   },
   "dependencies": {
     "nouislider": "^15.6.1",
-    "sliderm": "^1.0.3"
+    "sliderm": "^1.0.4"
   }
 }

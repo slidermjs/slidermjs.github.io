@@ -5,7 +5,7 @@ id: docs
 permalink: /docs/
 ---
 
-Thanks for being interested in using Sliderm. If you are looking for a simple slider library, you got a right place. Its packed size is less than 12 KB, extremely lightweight and flexible, easy to extend it for your needs.
+Thanks for being interested in using Sliderm. If you are looking for a simple slider library, you got a right place. Its packed size is less than 16 KB, extremely lightweight and flexible, easy to extend it for your needs.
 
 ## Getting started
 
@@ -32,8 +32,8 @@ Or, just put the JavaScript and CSS into your HTML.
 ### CDN
 
 ```html
-<link rel="stylesheet" href="https://sliderm.com/dist/1.0.3/sliderm.css">
-<script src="https://sliderm.com/dist/1.0.3/sliderm.js"></script>
+<link rel="stylesheet" href="https://sliderm.com/dist/1.0.4/sliderm.css">
+<script src="https://sliderm.com/dist/1.0.4/sliderm.js"></script>
 ```
 
 This documentation webiste is hosted on GitHub Page, the library is available to use directly as well.
@@ -62,12 +62,11 @@ Initializing the Sliderm is quite simple, the first parameter is the CSS selctor
 
 ```javascript
  const sliderm = new Sliderm('#exampe-slider', {
-    previousNext: true,
+    arrow: true,
     pagination: true,
     grouping: false,
     loop: true,
     preview: false,
-    previewEdge: 40,
     columns: 4,
     duration: 1000,
     spacing: 10,

@@ -15,12 +15,11 @@ const demo = () => {
     };
   };
 
-  let sliderm = new Sliderm('#demo-slider');
+  let sliderm = null;
 
   const intializeSlider = () => {
     const pagination = document.querySelector('#option__pagination--value').innerHTML === 'true';
-    const previousNext =
-      document.querySelector('#option__previous-next--value').innerHTML === 'true';
+    const arrow = document.querySelector('#option__arrow--value').innerHTML === 'true';
     const align = document.querySelector('#option__align--value').innerHTML;
     const previewEdge = Number(document.querySelector('#option__edge--value').innerHTML);
     const preview = document.querySelector('#option__preview--value').innerHTML === 'true';
@@ -37,9 +36,11 @@ const demo = () => {
       spacing,
       grouping,
       preview,
-      previewEdge,
+      _preview: {
+        edge: previewEdge,
+      },
       align,
-      previousNext,
+      arrow,
       pagination,
     };
 
@@ -194,7 +195,7 @@ const demo = () => {
       });
     },
     previousNext: () => {
-      const dom = document.querySelector('#option__previous-next');
+      const dom = document.querySelector('#option__arrow');
       noUiSlider.create(dom, {
         start: 1,
         range: {
@@ -207,11 +208,11 @@ const demo = () => {
         if (value === 1) {
           dom.classList.remove('off');
           dom.classList.add('on');
-          document.querySelector('#option__previous-next--value').innerHTML = 'true';
+          document.querySelector('#option__arrow--value').innerHTML = 'true';
         } else {
           dom.classList.remove('on');
           dom.classList.add('off');
-          document.querySelector('#option__previous-next--value').innerHTML = 'false';
+          document.querySelector('#option__arrow--value').innerHTML = 'false';
         }
         resetSlider();
       });
@@ -251,6 +252,8 @@ const demo = () => {
   options.align();
   options.previousNext();
   options.pagination();
+
+  resetSlider();
 };
 
 demo();

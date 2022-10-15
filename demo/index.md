@@ -5,7 +5,7 @@ id: demo
 permalink: /demo/
 ---
 <div class="demo-wrapper">
-    <div id="demo-slider" class="sliderm">
+    <div id="demo-slider" class="sliderm sliderm--initialize">
         <div class="sliderm__slider">
             <div class="sliderm__slides">
                 <div class="sliderm__slide"><div class="demo__box"><span>1</span></div></div>
@@ -75,7 +75,7 @@ permalink: /demo/
     </div>
     <div class="option__item">
         <div class="item__label">
-            previewEdge: <span class="option__value" id="option__edge--value"></span>
+            preview.edge: <span class="option__value" id="option__edge--value"></span>
         </div>
         <div class="item__ctrl">
             <div id="option__edge"></div>
@@ -97,10 +97,10 @@ permalink: /demo/
 <div class="demo__options">
     <div class="option__item">
         <div class="item__label">
-            previousNext: <span class="option__value" id="option__previous-next--value"></span>
+            arrow: <span class="option__value" id="option__arrow--value"></span>
         </div>
         <div class="item__ctrl item__ctrl--toggle">
-            <div id="option__previous-next"></div>
+            <div id="option__arrow"></div>
         </div>
     </div>
     <div class="option__item">
