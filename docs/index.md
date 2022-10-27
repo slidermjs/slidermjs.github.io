@@ -5,21 +5,22 @@ id: docs
 permalink: /docs/
 ---
 
-Thanks for being interested in using Sliderm. If you are looking for a simple slider library, you got a right place. Its packed size is less than 16 KB, extremely lightweight and flexible, easy to extend it for your needs.
+# Getting started
 
-## Getting started
+Thanks for being interested in using Sliderm. If you are looking for a simple slider library, you got a right place. The packed size of sliderm.js is less than 19 KB, extremely lightweight and flexible, easy to extend it for your needs.
 
-### Install
+
+## Install
 
 ```
 npm install sliderm
 ```
 
-Once you have installed Slidem via NPM, you can import the JavaScript and CSS code.
+Once you have installed Sliderm via NPM, you can import the JavaScript and CSS code.
 
 ```javascript
 import Sliderm from 'sliderm';
-import css from 'sliderm/src/assets/scss/index.scss';
+import 'sliderm/src/assets/scss/index.scss';
 ```
 
 Or, just put the JavaScript and CSS into your HTML.
@@ -32,15 +33,15 @@ Or, just put the JavaScript and CSS into your HTML.
 ### CDN
 
 ```html
-<link rel="stylesheet" href="https://sliderm.com/dist/1.0.4/sliderm.css">
-<script src="https://sliderm.com/dist/1.0.4/sliderm.js"></script>
+<link rel="stylesheet" href="https://sliderm.com/dist/1.0.6/sliderm.css">
+<script src="https://sliderm.com/dist/1.0.6/sliderm.js"></script>
 ```
 
 This documentation webiste is hosted on GitHub Page, the library is available to use directly as well.
 
 ### HTML markup
 
-The HTML makup is required for intializing Sliderm.
+The HTML makeup is required for intializing Sliderm.
 
 ```html
 <div id="exampe-slider" class="sliderm">
@@ -56,25 +57,25 @@ The HTML makup is required for intializing Sliderm.
 </div>
 ```
 
-### How to use
+## How to use
 
-Initializing the Sliderm is quite simple, the first parameter is the CSS selctor of the slider you want to activate, the second parameter is the configuration options.
+Initializing the Sliderm is quite simple, the first parameter is the CSS selector of the slider you want to activate, the second parameter is the configuration options.
 
 ```javascript
- const sliderm = new Sliderm('#exampe-slider', {
-    arrow: true,
-    pagination: true,
-    grouping: false,
-    loop: true,
-    preview: false,
-    columns: 4,
-    duration: 1000,
-    spacing: 10,
-    align: 'center',
+const sliderm = new Sliderm('#exampe-slider', {
+  arrow: true,
+  pagination: true,
+  grouping: false,
+  loop: true,
+  preview: false,
+  columns: 4,
+  duration: 1000,
+  spacing: 10,
+  align: 'center',
 });
 ```
 
-There are two events for now.
+Events:
 
 ```javascript
 sliderm.on('slide.start', () => {

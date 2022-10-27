@@ -99,3 +99,52 @@ body.home {
     text-transform: uppercase;
   }
 }
+
+// < 550px
+@include media-breakpoint-down(mobile) {
+  .first-section {
+    &__intro {
+      h1 {
+        font-size: 60px;
+
+        span {
+          &::after {
+            top: 22px;
+            left: -184px;
+            border-top: 8px solid transparent;
+            border-right: 8px solid aquamarine;
+            border-bottom: 8px solid transparent;
+            border-left: 8px solid transparent;
+          }
+
+          &::before {
+            content: "";
+            top: 22px;
+            right: -22px;
+            border-top: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 8px solid aquamarine;
+          }
+
+          @include border-radius(8px);
+        }
+      }
+
+      p {
+        padding: 0 10px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .intro {
+    &__button {
+      width: 130px;
+      height: 30px;
+      padding: 10px 0;
+      font-size: 14px;
+      line-height: 30px;
+    }
+  }
+}
