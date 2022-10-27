@@ -39,7 +39,7 @@ Or, just put the JavaScript and CSS into your HTML.
 
 This documentation webiste is hosted on GitHub Page, the library is available to use directly as well.
 
-### HTML markup
+### HTML makeup
 
 The HTML makeup is required for intializing Sliderm.
 
