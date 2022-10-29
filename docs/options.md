@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sliderm Docs
+title: Options - Sliderm
 id: docs-options
 permalink: /docs/options
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sliderm Docs
+title: Getting Started - Sliderm
 id: docs
 permalink: /docs/
 ---

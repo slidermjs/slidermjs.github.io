@@ -37,3 +37,84 @@ table {
     display: block;
   }
 }
+
+// < 550px
+@include media-breakpoint-down(mobile) {
+  #primary-options ~ table {
+    tr {
+      border-bottom: 1px solid #77abaf;
+    }
+
+    tbody,
+    td,
+    tr {
+      display: block;
+    }
+
+    thead {
+      display: none;
+    }
+
+    td {
+      position: relative;
+      padding-left: 36%;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+
+      &::before {
+        position: absolute;
+        top: 15px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        color: #77abaf;
+        font-weight: bold;
+        font-size: 13px;
+        white-space: nowrap;
+        font-variant-caps: all-petite-caps;
+      }
+
+      &:nth-of-type(1) {
+        &::before {
+          content: "field";
+        }
+      }
+
+      &:nth-of-type(2) {
+        &::before {
+          content: "type";
+        }
+      }
+
+      &:nth-of-type(3) {
+        &::before {
+          content: "default";
+        }
+      }
+
+      &:nth-of-type(4) {
+        &::before {
+          content: "options";
+        }
+      }
+
+      &:nth-of-type(5) {
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  #child-options ~ table {
+    td {
+      &:nth-of-type(4) {
+        &::before {
+          display: none;
+        }
+
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}
