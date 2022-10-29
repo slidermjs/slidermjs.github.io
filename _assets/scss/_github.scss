@@ -1,6 +1,9 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
 .highlight {
+  overflow-x: auto;
   color: #000;
-  font-family: Consolas, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New";
+  font-size: 14px;
+  font-family: "Courier New";
 
   .hll {
     background-color: #ffc;

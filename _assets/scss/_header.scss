@@ -1,9 +1,29 @@
 .navigation-header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: $header-height;
-  background-color: rgb(0 0 0 / 90%);
+  background-color: #000;
+
+  #menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+
+    &:checked ~ label {
+      background-position: 0 -50px;
+    }
+
+    &:checked ~ .primary-menu {
+      width: 0;
+      background-position: 0 -50px;
+    }
+  }
 }
 
 .primary-menu {
@@ -11,6 +31,22 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+
+  &__toggle-button {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    z-index: 999;
+    display: inline-block;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-image: url("/assets/images/icon-toggle.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    list-style-type: none;
+    cursor: pointer;
+  }
 
   &__item {
     a {
@@ -42,6 +78,66 @@
         vertical-align: middle;
         height: 45px;
       }
+    }
+  }
+}
+
+// < 850px
+@include media-breakpoint-down(mobile-large) {
+  .navigation-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    #menu-toggle {
+      &:checked ~ .primary-menu {
+        width: 100%;
+        height: auto;
+
+        .primary-menu__item {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  .primary-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 2;
+    flex-direction: column;
+    width: 0;
+    background-color: rgb(0 0 0 / 85%);
+    transition: 0.5s all ease;
+
+    &__item {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      transform: translateX(-100%);
+
+      a {
+        display: block;
+        text-align: center;
+      }
+
+      &--logo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        transform: translateX(0);
+
+        a {
+          display: inline-block;
+        }
+      }
+    }
+
+    &__toggle-button {
+      display: inline-block;
     }
   }
 }

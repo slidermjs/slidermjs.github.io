@@ -15,10 +15,10 @@ body {
 
 .content {
   &__container {
-    width: 100%;
+    width: calc(100% - 20px);
     max-width: 1080px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 
     &--has-sidebar {
       display: flex;
@@ -26,6 +26,7 @@ body {
       .content {
         &__body {
           flex: 1 1;
+          overflow: hidden;
           padding: 20px;
         }
 
@@ -52,15 +53,6 @@ div.highlight {
   }
 }
 
-.submenu {
-  &__sep-line {
-    display: block;
-    height: 1px;
-    margin: 10px 0;
-    background-color: #ddd;
-  }
-}
-
 p {
   .highlighter-rouge {
     padding: 3px;
@@ -70,5 +62,14 @@ p {
     font-size: 13px;
 
     @include border-radius(4px);
+  }
+}
+
+// < 850px
+@include media-breakpoint-down(mobile-large) {
+  .content {
+    &__container {
+      padding: 90px 0 0;
+    }
   }
 }
