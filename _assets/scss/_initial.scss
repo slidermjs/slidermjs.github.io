@@ -50,3 +50,25 @@ h6 {
   color: #777;
   font-size: 14px;
 }
+
+ul,
+ol {
+  margin-bottom: 1em;
+  padding-left: 2em;
+  list-style-type: initial;
+
+  em {
+    padding: 3px 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #4183c4;
+    font-style: italic;
+    font-size: 13px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  code {
+    color: #da4b51;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
