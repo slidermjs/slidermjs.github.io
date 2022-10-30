@@ -33,8 +33,8 @@ Or, just put the JavaScript and CSS into your HTML.
 ### CDN
 
 ```html
-<link rel="stylesheet" href="https://sliderm.com/dist/1.0.6/sliderm.css">
-<script src="https://sliderm.com/dist/1.0.6/sliderm.js"></script>
+<link rel="stylesheet" href="https://sliderm.com/dist/1.0.8/sliderm.css">
+<script src="https://sliderm.com/dist/1.0.8/sliderm.js"></script>
 ```
 
 This documentation webiste is hosted on GitHub Page, the library is available to use directly as well.
