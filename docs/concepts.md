@@ -7,4 +7,5 @@ permalink: /docs/concepts
 
 # Concepts
 
+Comming soon.
 

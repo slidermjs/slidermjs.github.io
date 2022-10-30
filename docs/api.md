@@ -133,6 +133,11 @@ sliderm.updatePosition(2);
 
 Update current items.  This method can not be called after initializing.
 
+Example:
+```javascript
+sliderm.updateCurrentItems();
+```
+
 ### updateOption
 
 - param *String* `field` The name of a field in options.
@@ -221,7 +226,6 @@ Example:
 sliderm.emit('your_custom_event');
 sliderm.emit('your_custom_event', 'arg1', 'arg2');
 ```
-
 
 ## destory
 

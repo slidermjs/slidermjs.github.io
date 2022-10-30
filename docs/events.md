@@ -7,12 +7,12 @@ permalink: /docs/events
 
 # Events
 
-- initialize
-- initialized
-- breakpoint.changed
-- slide.start
-- slide.end
-- destory
+- [initialize](#initialize)
+- [initialized](#initialized)
+- [breakpoint.changed](#breakpointchanged)
+- [slide.start](#slidestart)
+- [slide.end](#slideend)
+- [destory](#destory)
 
 ## Built-in events
 
@@ -22,7 +22,7 @@ permalink: /docs/events
 
 ### initialize
 
-The `initalize` event will be triggered wheh intializing the Sliderm instance.
+The `initalize` event will be triggered when intializing the Sliderm instance.
 
 Example:
 ```javascript
