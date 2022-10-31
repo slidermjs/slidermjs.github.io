@@ -35,6 +35,19 @@ plugins:
 assets:
   cache: false
 
+navigation:
+ - text: Getting started
+   url: /docs/
+ - text: Options
+   url: /docs/options
+ - text: API
+   url: /docs/api
+ - text: Events
+   url: /docs/events
+ - text: Components
+   url: /docs/components
+ - text: Modules
+   url: /docs/modules
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

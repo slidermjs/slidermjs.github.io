@@ -4,14 +4,16 @@
     <div class="nav__triango"></div>
     <label class="nav__toggle-button" for="nav-toggle"></label>
     <ul class="nav__items">
-        <li class="nav__item"><a href="/docs">Getting started</a></li>
-        <li class="nav__item"><a href="/docs/options">Options</a></li>
-        <li class="nav__item"><a href="/docs/api">API</a></li>
-        <li class="nav__item"><a href="/docs/events">Events</a></li>
+        {% assign url = page.url|remove:'index.html' %}
+        {% for link in site.navigation %}
+        {% if link.text == '---' %}
         <li class="nav__sep-line"></li>
-        <li class="nav__item"><a href="/docs/concepts">Concepts</a></li>
-        <li class="nav__item"><a href="/docs/components">Components</a></li>
-        <li class="nav__item"><a href="/docs/modules">Modules</a></li>
+        {% else %}
+        <li class="nav__item{% if url == link.url %}--active{% endif %}">
+            <a href="{{link.url}}" >{{link.text}}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
     </ul>
 </div>
 
