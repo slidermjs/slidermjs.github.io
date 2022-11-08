@@ -67,5 +67,11 @@ Handle the items when the option loop is enabled.
 
 Do things in the initializing statge.
 
+## Customization
 
+The `go` API allows you use your customized module in your component.
+
+```javascript
+sliderm.go('moduleName', ...args) {
+```
 
