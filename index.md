@@ -2,6 +2,7 @@
 layout: default
 id: home
 title: Sliderm - A Slider & Carousel JavaScript Library
+meta_description: A dependency-free, lightweight slider and carousel JavaScript library.
 ---
 <div class="home">
     <div class="home__first-section">
